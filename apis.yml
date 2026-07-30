@@ -1,8 +1,29 @@
 aid: meitre
 name: Meitre
-description: Meitre is a company surfaced as a portfolio company of 500-global, a16z and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Meitre is the leading online reservations, guest, and revenue management
+  platform for the world's top restaurants, with a strong presence across Latin
+  America. It provides a hardware-agnostic, white-label toolkit that lets
+  restaurants manage reservations, availability, waitlists, and guest
+  relationships from a single centralized system. Meitre's algorithms
+  automatically manage table availability by analyzing the setup of each area of
+  a restaurant and demand for each slot, and can require credit-card guarantees
+  to virtually eliminate no-shows. Restaurants pay a fixed monthly fee (no
+  commission), and Meitre exposes a partner integration API at meitre-api.com
+  plus an MCP server for AI-powered natural-language restaurant booking.
 url: https://raw.githubusercontent.com/api-evangelist/meitre/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://meitre.com/favicon.ico
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,15 +33,59 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Restaurants
+- Reservations
+- Hospitality
+- Booking
+- Guest Management
+- Revenue Management
+- Food and Beverage
+- Latin America
+apis:
+- name: Meitre Partner API
+  description: >-
+    Partner integration API for accessing Meitre's restaurant reservations,
+    availability, and guest data. Documentation is behind an authenticated
+    developer portal at meitre-api.com; access is arranged via
+    engineering@meitre.com.
+  humanURL: https://meitre-api.com/
+  baseURL: https://meitre-api.com
+  properties:
+  - type: APIReference
+    url: https://meitre-api.com/
+  - type: Documentation
+    url: https://meitre-api.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/meitre-domain-security.yml
 - type: Website
   url: https://meitre.com
+- type: DeveloperPortal
+  url: https://meitre-api.com/
+- type: APIReference
+  url: https://meitre-api.com/
+- type: SignUp
+  url: https://www.meitre.com/en/client-signup
+- type: TermsOfService
+  url: https://legal.meitre.com/terms-service
+- type: PrivacyPolicy
+  url: https://legal.meitre.com/privacy-policy
+- type: MCPServer
+  url: mcp/meitre-mcp.yml
+- type: WellKnown
+  url: well-known/meitre-well-known.yml
+- type: LLMsTxt
+  url: llms/meitre-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
