@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/* on Meitre hosts
+# Note: meitre.com returns its SPA index.html (200, text/html) for unknown paths,
+# including /.well-known/ai-plugin.json — that is a catch-all, NOT a real
+# well-known document, so it is recorded as effectively absent.
+hosts:
+- host: https://meitre-api.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://meitre.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: SPA catch-all index.html, not a real ai-plugin manifest

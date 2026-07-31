@@ -1,0 +1,22 @@
+# Meitre
+
+> Meitre is the leading online reservations, guest, and revenue management platform for the world's top restaurants, with a strong presence across Latin America. It offers a hardware-agnostic, white-label toolkit for managing reservations, availability, waitlists, and guest relationships, plus a partner integration API and an MCP server for AI-powered natural-language booking.
+
+## APIs
+
+- [Meitre Partner API](https://meitre-api.com/): Partner integration API for reservations, availability, and guest data. Documentation is behind an authenticated developer portal; access via engineering@meitre.com.
+
+## Agents
+
+- [Meitre MCP Server](https://mcpmarket.com/server/meitre): Model Context Protocol server for AI-powered restaurant booking via natural language.
+
+## Product
+
+- [Meitre](https://meitre.com): Discover and book the region's most extraordinary restaurants, wineries, and bars.
+- [Reservations product (sapiens)](https://sapiens.meitre.com/): Restaurant reservations platform.
+- [Client Sign Up](https://www.meitre.com/en/client-signup): Onboard a restaurant onto Meitre.
+
+## Legal
+
+- [Terms of Service](https://legal.meitre.com/terms-service)
+- [Privacy Policy](https://legal.meitre.com/privacy-policy)
