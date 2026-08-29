@@ -12,6 +12,17 @@ description: >-
   commission), and Meitre exposes a partner integration API at meitre-api.com
   plus an MCP server for AI-powered natural-language restaurant booking.
 url: https://raw.githubusercontent.com/api-evangelist/meitre/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: approval
